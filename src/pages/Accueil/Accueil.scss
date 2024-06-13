@@ -65,8 +65,8 @@
 
     .card-title {
       position: absolute;
-      bottom: 16px; // Ajustez selon vos besoins
-      left: 16px; // Ajustez selon vos besoins
+      bottom: 16px;
+      left: 16px;
       width: 50%;
       text-align: start;
       margin: 0;
@@ -82,16 +82,15 @@
   }
 }
 
-
-@media (max-width:800px) {
-  .Accueil .card-container{
-    margin:15px 0;
-    background-color:white;
-    padding:0;
+@media (max-width: 800px) {
+  .Accueil .card-container {
+    margin: 15px 0;
+    background-color: white;
+    padding: 0;
     .card {
       box-sizing: border-box;
       flex: 1 1 calc(100%);
       max-width: 100%;
+    }
   }
-}
 }

@@ -129,31 +129,28 @@
 }
 
 @media (max-width: 800px) {
-
   .card-page {
     .carousel .carousel-image {
       height: 300px;
-  }
+    }
     .card-details {
       flex-direction: column;
 
       .host-info {
         flex-direction: row-reverse;
         justify-content: space-between;
-        .card-host{
+        .card-host {
           max-width: 150px;
           align-items: center;
-          .host-name{
-            font-size:15px;
-
+          .host-name {
+            font-size: 15px;
           }
-          .host-picture{
-            width:50px;
-            height:50px
+          .host-picture {
+            width: 50px;
+            height: 50px;
           }
-
         }
-        p div img{
+        p div img {
           width: 25px;
         }
       }
@@ -162,7 +159,7 @@
     .dropdown-container {
       flex-direction: column;
 
-     .dropdown {
+      .dropdown {
         margin: 10px;
       }
     }

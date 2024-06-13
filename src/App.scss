@@ -24,7 +24,7 @@ header {
   padding: 30px 10px;
 
   .header-logo {
-    width:19vh;
+    width: 19vh;
   }
 
   nav {
@@ -141,12 +141,12 @@ header {
   }
 
   .dropdown-toggle {
-    margin-left: 10px; 
+    margin-left: 10px;
     background-color: #ff6060;
-    color: white; 
-    border: none; 
-    padding: 5px 10px; 
-    cursor: pointer; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 
     .arrow {
       transition: transform 0.3s ease;
@@ -167,13 +167,13 @@ header {
 
     &.open {
       padding: 10px;
-      max-height: 500px; // Ajustez cette valeur selon la taille maximale de votre contenu
+      max-height: 500px;
       transition: max-height 0.3s ease-in, padding 0.3s ease-in;
     }
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   body {
     margin: 0 15px;
   }
