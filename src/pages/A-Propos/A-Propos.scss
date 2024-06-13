@@ -1,0 +1,15 @@
+@media (min-width:800px) {
+    .A-Propos{
+        .dropdown-container{ 
+            margin:30px 100px;
+        }
+    }    
+}
+
+@media (max-width:800px) {
+    .A-Propos{
+    .dropdown-container{ 
+        margin:30px 10px;
+    }
+}  
+}

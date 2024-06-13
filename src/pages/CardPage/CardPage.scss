@@ -1,0 +1,170 @@
+.card-page {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+  .card-details {
+    display: flex;
+    flex-direction: row;
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .card-title {
+        .card-name {
+          color: #ff6060;
+          margin: 0;
+          font-size: 32px;
+        }
+        .card-location {
+          margin: 0;
+        }
+      }
+
+      .card-location {
+        font-weight: 500;
+      }
+
+      ul.tags-list {
+        display: flex;
+        padding: 0;
+        align-items: center;
+
+        .tag {
+          display: ruby-text;
+          background-color: #ff6060;
+          border-radius: 10px;
+          color: white;
+          font-weight: bold;
+          padding: 5px;
+          min-width: 100px;
+          font-size: small;
+          margin-right: 5px;
+          text-align: center;
+        }
+      }
+    }
+
+    .host-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .card-host {
+        display: flex;
+        width: 200px;
+
+        .host-name {
+          color: #ff6060;
+          text-align: end;
+          padding: 15px;
+          font-weight: 500;
+          margin: 0;
+        }
+
+        .host-picture {
+          border-radius: 50%;
+          width: 85px;
+          height: 85px;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+
+    .carousel-counter {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .dropdown-container {
+    display: flex;
+    flex-direction: row;
+
+    .dropdown {
+      margin: 20px;
+      ul.equipement-list {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  .card-page {
+    .carousel .carousel-image {
+      height: 300px;
+  }
+    .card-details {
+      flex-direction: column;
+
+      .host-info {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .card-host{
+          max-width: 150px;
+          align-items: center;
+          .host-name{
+            font-size:15px;
+
+          }
+          .host-picture{
+            width:50px;
+            height:50px
+          }
+
+        }
+        p div img{
+          width: 25px;
+        }
+      }
+    }
+
+    .dropdown-container {
+      flex-direction: column;
+
+     .dropdown {
+        margin: 10px;
+      }
+    }
+  }
+}
