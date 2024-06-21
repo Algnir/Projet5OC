@@ -4,6 +4,9 @@ body {
   margin: 0 50px;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
+  @media (max-width: 800px) {
+    margin: 0 15px;
+  }
 
   #root {
     //pour avoir le footer en bas quand le contenu n'est pas assez grand
@@ -172,8 +175,3 @@ header {
   }
 }
 
-@media (max-width: 800px) {
-  body {
-    margin: 0 15px;
-  }
-}
