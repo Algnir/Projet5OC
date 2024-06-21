@@ -29,7 +29,7 @@ const CardPage = () => {
             <h3 className="host-name">{card.host.name}</h3>
             <img className="host-picture" src={card.host.picture}/>
           </div>        
-          <p><Rating rating={card.rating}/></p>
+          <Rating rating={card.rating}/>
         </div>
       </div>
       <div className="dropdown-container">
